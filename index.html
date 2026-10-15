@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Lucas Barros da Silva, estudante de Sistemas de Informação com foco em desenvolvimento back-end.">
+  <meta name="theme-color" content="#f5f2ff">
+  <title>Lucas Barros da Silva | Portfólio</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <main class="app">
+    <section class="view home-view active" id="inicio" aria-labelledby="titulo-inicio">
+      <div class="home-content">
+        <img
+          class="avatar"
+          src="assets/foto-perfil.png"
+          alt="Foto de perfil de Lucas Barros da Silva"
+          width="1254"
+          height="1254"
+          fetchpriority="high"
+        >
+
+        <p class="eyebrow">Olá, eu sou</p>
+        <h1 id="titulo-inicio">Lucas Barros da Silva</h1>
+
+        <p class="role">Estudante de Sistemas de Informação · Desenvolvimento back-end</p>
+        <p class="intro">
+          Estou no 8º período e busco minha primeira oportunidade em desenvolvimento.
+          Tenho interesse em back-end, APIs e bancos de dados.
+        </p>
+
+        <div class="home-actions" aria-label="Navegação do portfólio">
+          <button class="menu-button" type="button" data-open="sobre" aria-controls="sobre">
+            Sobre mim
+          </button>
+          <button class="menu-button" type="button" data-open="projetos" aria-controls="projetos">
+            Veja meus projetos
+          </button>
+          <button class="menu-button" type="button" data-open="certificados" aria-controls="certificados">
+            Certificados e formações
+          </button>
+        </div>
+
+        <nav class="socials" aria-label="Redes profissionais">
+          <a href="https://github.com/LucasBarros0" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Lucas Barros">GH</a>
+          <a href="https://www.linkedin.com/in/lucas-barros-146731253/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Lucas Barros">in</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="view detail-view" id="sobre" aria-labelledby="titulo-sobre" hidden>
+      <button class="back-button" type="button" data-home aria-label="Voltar ao início">← Voltar ao início</button>
+
+      <div class="detail-card">
+        <img
+          class="avatar large"
+          src="assets/foto-perfil.png"
+          alt="Foto de perfil de Lucas Barros da Silva"
+          width="1254"
+          height="1254"
+          loading="lazy"
+        >
+
+        <p class="eyebrow">Um pouco da minha jornada</p>
+        <h2 id="titulo-sobre">Sobre mim</h2>
+
+        <p>
+          Sou estudante de Sistemas de Informação na Universidade CEUMA, atualmente no 8º período,
+          e busco minha primeira oportunidade profissional na área de desenvolvimento. Tenho interesse
+          em desenvolvimento back-end, APIs e bancos de dados, e venho aplicando meus estudos em projetos
+          acadêmicos e pessoais.
+        </p>
+        <p>
+          Entre as tecnologias que estudo e utilizo em projetos estão Python, FastAPI, Node.js, SQL,
+          Java, Spring e C#.
+        </p>
+
+        <div class="detail-links">
+          <a class="button primary" href="https://github.com/LucasBarros0" target="_blank" rel="noopener noreferrer">
+            Meu GitHub
+          </a>
+          <a class="button" href="https://www.linkedin.com/in/lucas-barros-146731253/" target="_blank" rel="noopener noreferrer">
+            Meu LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="view detail-view" id="projetos" aria-labelledby="titulo-projetos" hidden>
+      <button class="back-button" type="button" data-home aria-label="Voltar ao início">← Voltar ao início</button>
+
+      <div class="section-heading">
+        <p class="eyebrow">Minha trajetória na tecnologia</p>
+        <h2 id="titulo-projetos">Meus projetos</h2>
+        <p>Projetos pessoais e acadêmicos que fazem parte da minha evolução como desenvolvedor.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-image" aria-hidden="true">Frodo AI</div>
+          <div class="project-info">
+            <h3>Frodo AI — Assistente de IA</h3>
+            <p>
+              Assistente pessoal de inteligência artificial em desenvolvimento com Python e FastAPI,
+              integrado à API do Gemini e pensado para permitir interações por mensagens.
+            </p>
+            <p class="tags">Python · FastAPI · Gemini API · Uvicorn</p>
+            <span class="project-status">Em desenvolvimento</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image" aria-hidden="true">Pokédex Desktop</div>
+          <div class="project-info">
+            <h3>Pokédex Desktop</h3>
+            <p>
+              Aplicação desktop em Python com Tkinter para consultar a PokéAPI, buscar Pokémon,
+              organizar favoritos e manter cache local.
+            </p>
+            <p class="tags">Python · Tkinter · Requests · PokéAPI</p>
+            <a class="project-link" href="https://github.com/LucasBarros0/UC5-main" target="_blank" rel="noopener noreferrer">
+              Ver repositório ↗
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image" aria-hidden="true">API de Usuários</div>
+          <div class="project-info">
+            <h3>API de Cadastro de Usuários</h3>
+            <p>
+              Projeto da trilha de back-end com foco em cadastro e autenticação de usuários,
+              Prisma, banco de dados SQL, JWT e validação de rotas protegidas.
+            </p>
+            <p class="tags">Back-end · APIs · Prisma · SQL · JWT</p>
+            <span class="project-status">Link do repositório não informado</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image" aria-hidden="true">Waze do Lixo</div>
+          <div class="project-info">
+            <h3>Waze do Lixo</h3>
+            <p>
+              Ideia de uma aplicação com proposta de SaaS para facilitar a identificação e o registro
+              de pontos de descarte de lixo. O projeto está em fase de planejamento e desenvolvimento.
+            </p>
+            <p class="tags">Next.js · React · JavaScript · Vercel</p>
+            <span class="project-status">Em planejamento</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="view detail-view" id="certificados" aria-labelledby="titulo-certificados" hidden>
+      <button class="back-button" type="button" data-home aria-label="Voltar ao início">← Voltar ao início</button>
+
+      <div class="section-heading">
+        <p class="eyebrow">Aprendizado contínuo</p>
+        <h2 id="titulo-certificados">Certificados e formações</h2>
+        <p>Cursos e experiências de aprendizagem que contribuem para minha formação na área de tecnologia.</p>
+      </div>
+
+      <div class="certificate-list">
+        <article class="certificate">
+          <span class="certificate-icon" aria-hidden="true">✦</span>
+          <div>
+            <h3>InCode — Módulo 2</h3>
+            <p>Trilha de desenvolvimento back-end com Java, Spring, banco de dados e C# · 320 horas</p>
+          </div>
+        </article>
+
+        <article class="certificate">
+          <span class="certificate-icon" aria-hidden="true">✦</span>
+          <div>
+            <h3>Trilha de Back-end — Inova Maranhão</h3>
+            <p>Formação em desenvolvimento back-end · Edição de 2024</p>
+          </div>
+        </article>
+
+        <article class="certificate">
+          <span class="certificate-icon" aria-hidden="true">✦</span>
+          <div>
+            <h3>Ética e Relação do Trabalho</h3>
+            <p>SENAC · Curso de formação profissional</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito por <strong>Lucas Barros da Silva</strong> · <span id="year"></span></p>
+  </footer>
+
+  <script>
+    const views = document.querySelectorAll(".view");
+
+    function showView(id) {
+      views.forEach((view) => {
+        const selected = view.id === id;
+        view.hidden = !selected;
+        view.classList.toggle("active", selected);
+      });
+
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    document.querySelectorAll("[data-open]").forEach((button) => {
+      button.addEventListener("click", () => showView(button.dataset.open));
+    });
+
+    document.querySelectorAll("[data-home]").forEach((button) => {
+      button.addEventListener("click", () => showView("inicio"));
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
